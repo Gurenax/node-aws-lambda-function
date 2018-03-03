@@ -7,7 +7,7 @@ This app uses the `Ramda` library to create a hello world greeting. It is not a 
 ```javascript
 const R = require('ramda')
 
-exports.handler = function(event, context, callback) {
+exports.handler = (event, context, callback) => {
   const response = buildGreeting(event.queryStringParameters)
   callback(null, response)
 }

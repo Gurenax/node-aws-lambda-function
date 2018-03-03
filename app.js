@@ -1,6 +1,6 @@
 const R = require('ramda')
 
-exports.handler = function(event, context, callback) {
+exports.handler = (event, context, callback) => {
   const response = buildGreeting(event.queryStringParameters)
   callback(null, response)
 }
