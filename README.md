@@ -27,7 +27,7 @@ exports.handler = function(event, context, callback) {
 ```
 
 ## Install
-1. Make sure to `yarn install` since this app uses the Ramda package.
+Make sure to `yarn install` since this app uses the Ramda package.
 
 ## Deployment to AWS Lambda
 1. Zip the contents of this folder (not the folder itself).
