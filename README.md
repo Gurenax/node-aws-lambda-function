@@ -33,9 +33,10 @@ exports.handler = function(event, context, callback) {
 1. Zip the contents of this folder (not the folder itself).
 2. Go to AWS Lambda Console and crate a new Function
 3. Under `Code entry type`, select `Upload a .ZIP file`
-4. Save the function
-5. Create a test event and save the event
-6. Click test and make sure it's working
-7. Add the trigger `API Gateway`, configure and save.
-8. Copy the `invoke URL` under the API Gateway details
-9. Test the URL e.g. https://xxxx.amazonaws.com/zzzz/node-aws-lambda-function?name=Glenn
+4. Rename the Handler to `app.handler`
+5. Save the function
+6. Create a test event and save the event
+7. Click test and make sure it's working
+8. Add the trigger `API Gateway`, configure and save.
+9. Copy the `invoke URL` under the API Gateway details
+10. Test the URL e.g. https://xxxx.amazonaws.com/zzzz/node-aws-lambda-function?name=Glenn
