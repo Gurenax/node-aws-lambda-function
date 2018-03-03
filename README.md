@@ -1,7 +1,7 @@
 # Node AWS Lambda Function Basic Boilerplate
 
 This is the basic pattern for a serverless AWS lambda function which can be deployed as a zip file in the AWS lambda console.   
-This app uses the `Ramda` library to create a hello world greeting.
+This app uses the `Ramda` library to create a hello world greeting. It is not a requirement to AWS lambda but this shows that npm packages can be used in serverless environments.
 
 ## `app.js`
 ```javascript
@@ -25,6 +25,9 @@ exports.handler = function(event, context, callback) {
   callback(null, response)
 }
 ```
+
+## Install
+1. Make sure to `yarn install` since this app uses the Ramda package.
 
 ## Deployment to AWS Lambda
 1. Zip the contents of this folder (not the folder itself).
