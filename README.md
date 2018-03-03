@@ -1,9 +1,9 @@
 # Node AWS Lambda Function Basic Boilerplate
 
-This is the basic pattern for a serverless AWS lambda function which can be deployed as a zip file in the AWS lambda console.
+This is the basic pattern for a serverless AWS lambda function which can be deployed as a zip file in the AWS lambda console.   
+This app uses the `Ramda` library to create a hello world greeting.
 
 ## `app.js`
-This app uses the Ramda library to create a hello world greeting.
 ```javascript
 const R = require('ramda')
 
@@ -26,7 +26,7 @@ exports.handler = function(event, context, callback) {
 }
 ```
 
-## Deployment
+## Deployment to AWS Lambda
 1. Zip the contents of this folder (not the folder itself).
 2. Go to AWS Lambda Console and crate a new Function
 3. Under `Code entry type`, select `Upload a .ZIP file`
